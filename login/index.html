@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="../images/favicon.png">
+    <link href="../bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../menu.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <!-- Navbar Started -->
+    <header>
+
+        <nav role="navigation">
+            <div id="menuToggle">
+                <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+                <input type="checkbox" />
+
+                <!--
+          Some spans to act as a hamburger.
+          
+          They are acting like a real hamburger,
+          not that McDonalds stuff.
+          -->
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          -->
+                <ul id="menu">
+                    <div class="position-relative z-3">
+
+                        <div class="bucket d-flex justify-content-between">
+                            <a href="index.html"> 
+                                <button class="py-2 text-uppercase text-white fw-bold px-2 border border-0">Login</button>
+                            </a>
+                            <div class="time">
+                                <button href="#" class="text-white fw-bold rounded-4 day">Day</button>
+                                <button href="#" class="text-white fw-bold rounded-4 night">Night</button>
+                            </div>
+                        </div>
+                        <span id="menu-bar"></span>
+                        <ul id="service" class="px-0 py-2">
+                            <a href="#">
+                                <li><img src="../images/hem menu/locate.jpg" alt="">Store Locator</li>
+                            </a>
+                            <a href="#">
+                                <li><img src="../images/hem menu/track.jpg" alt="">Track Order</li>
+                            </a>
+                            <a href="../menu page/menu.html">
+                                <li><img src="../images/hem menu/explore.jpg" alt="">Explore Menu</li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <span id="menu-bar"></span>
+                    <a href="../about us/about.html">
+                        <li>about us</li>
+                    </a>
+                    <a href="#">
+                        <li>feedback</li>
+                    </a>
+                    <a href="../T&C/index.html">
+                        <li>terms & conditions</li>
+                    </a>
+                    <a href="../privacy page/privacy.html">
+                        <li>privacy policy</li>
+                    </a>
+                    <a href="../contact us/contact.html">
+                        <li>contact us</li>
+                    </a>
+                    <a href="../mitao bhook/bhook.html">
+                        <li>mitao bhook</li>
+                    </a>
+                    <a href="../scholarship/mb-scholarship.html">
+                        <li>mitao bhook - scholarship</li>
+                    </a>
+                    <a href="#">
+                        <li>careers</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="logo gap-3">
+                <a href="../index.html"><img src="../images/logo.png" alt=""></a>
+                <a href="#" class="del-pick pick1">
+                    <button class="delivery fw-bold">
+                        <img src="../images/delivey.png" alt="">
+                        <span class="text-white"> Delivery</span>
+                    </button>
+                </a>
+                <a href="#" class="del-pick ">
+                    <button class="pickup fw-bold">
+                        <img src="../images/pickup.png" alt="">
+                        <span class="text-white"> Pickup</span>
+
+                    </button>
+                </a>
+
+            </div>
+            <div class="bucket d-flex gap-3">
+                <img src="../images/bucket.png" alt="">
+                <a href="index.html"> 
+                    <button class="py-2 text-uppercase text-white fw-bold px-2 border border-0">Login</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Navbar Ended -->
+
+
+     <!-- login Section -->
+
+     <div class="login-section mx-auto rounded-3 d-flex gap-5">
+
+        <div class="d-flex justify-content-center w-50 chacha">
+            <img src="chacha.gif" alt="chacha">
+        </div>
+
+        <div class="form-section d-flex flex-column justify-content-center">
+            <h3 class="fw-bold fs-2 mt-4">Welcome!</h3>
+            <form class="d-flex flex-column gap-4 mt-4">
+                <div class="num rounded-top" onmouseover="removeBd(this)" onmouseout="insertBd(this)" onclick="redBd(this)">
+                    <label>
+                        <span>Phone Number (3XXXXXXXXX)</span><br>
+                        <b>+92 |</b><input type="text" name="num" id="inputel">
+                    </label>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <button class="log-btn" disabled>Login</button>
+                    <button><span class="bigG"></span> Login With Google</button>
+                </div>
+            </form>
+        </div>
+
+     </div>
+
+     <script src="../bootstrap.bundle.min.js"></script>
+     <script src="app.js"></script>
+
+</body>
+</html>
