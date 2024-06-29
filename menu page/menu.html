@@ -7,6 +7,7 @@
     <title>KFC Pakistan | Deals & Offers</title>
     <link rel="icon" href="../images/favicon.png">
     <link href="../bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../menu.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,112 +17,110 @@
     <header>
 
       <nav role="navigation">
-        <div id="menuToggle">
-            <!--
-      A fake / hidden checkbox is used as click reciever,
-      so you can use the :checked selector on it.
-      -->
-            <input type="checkbox" />
 
-            <!--
-      Some spans to act as a hamburger.
-      
-      They are acting like a real hamburger,
-      not that McDonalds stuff.
-      -->
-            <span></span>
-            <span></span>
-            <span></span>
+          <div>
 
-            <!--
-      Too bad the menu has to be inside of the button
-      but hey, it's pure CSS magic.
-      -->
-            <ul id="menu">
-                <div class="bucket d-flex justify-content-between">
-                  <a href="login/index.html"> 
-                    <button class="py-2 text-uppercase text-white fw-bold px-2 border border-0">Login</button>
-                </a>
-                    <div class="time">
-                        <button href="#" class="text-white fw-bold rounded-4 day">Day</button>
-                        <button href="#" class="text-white fw-bold rounded-4 night">Night</button>
-                    </div>
-                </div>
-                <span id="menu-bar"></span>
-                <ul id="service" class="px-0 py-2">
-                    <a href="#">
-                        <li><img src="../images/hem menu/locate.jpg" alt="">Store Locator</li>
-                    </a>
-                    <a href="#">
-                        <li><img src="../images/hem menu/track.jpg" alt="">Track Order</li>
-                    </a>
-                    <a href="menu.html">
-                        <li><img src="../images/hem menu/explore.jpg" alt="">Explore Menu</li>
-                    </a>
-                </ul>
+          <div id="menuToggle">
+              <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+              <input type="checkbox" />
 
-                <span id="menu-bar"></span>
-                <a href="../about us/about.html">
-                    <li>about us</li>
-                </a>
-                <a href="#">
-                    <li>feedback</li>
-                </a>
-                <a href="../T&C/index.html">
-                    <li>terms & conditions</li>
-                </a>
-                <a href="../privacy page/privacy.html">
-                    <li>privacy policy</li>
-                </a>
-                <a href="../contact us/contact.html">
-                    <li>contact us</li>
-                </a>
-                <a href="../mitao bhook/bhook.html">
-                    <li>mitao bhook</li>
-                </a>
-                <a href="../scholarship/mb-scholarship.html">
-                    <li>mitao bhook - scholarship</li>
-                </a>
-                <a href="#">
-                    <li>careers</li>
-                </a>
-            </ul>
-        </div>
-        <div class="logo gap-3">
-            <a href="../index.html"><img src="../images/logo.png" alt=""></a>
-            <a href="#">
-                <button class="delivery fw-bold">
-                    <img src="../images/delivey.png" alt="">
-                    <span class="text-white"> Delivery</span>
-                </button>
-            </a>
-            <a href="#">
-                <button class="pickup fw-bold">
-                    <img src="../images/pickup.png" alt="">
-                    <span class="text-white"> Pickup</span>
+              <!--
+        Some spans to act as a hamburger.
+        
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
 
-                </button>
-            </a>
+              <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+              <ul id="menu">
+                  <div class="bucket d-flex justify-content-between">
+                      <a href="../login/index.html"> 
+                          <button class="py-2 text-uppercase text-white fw-bold px-2 border border-0">Login</button>
+                      </a>
+                      <div class="time">
+                          <button href="#" class="text-white fw-bold rounded-4 day">Day</button>
+                          <button href="#" class="text-white fw-bold rounded-4 night">Night</button>
+                      </div>
+                  </div>
+                  <span id="menu-bar"></span>
+                  <ul id="service" class="px-0 py-2">
+                      <a href="#">
+                          <li><img src="../images/hem menu/locate.jpg" alt="locator">Store Locator</li>
+                      </a>
+                      <a href="#">
+                          <li><img src="../images/hem menu/track.jpg" alt="tracker">Track Order</li>
+                      </a>
+                      <a href="../menu page/menu.html">
+                          <li><img src="../images/hem menu/explore.jpg" alt="explore">Explore Menu</li>
+                      </a>
+                  </ul>
 
-        </div>
-        <div class="bucket d-flex gap-3">
-            <img src="../images/bucket.png" alt="">
-            <a href="login/index.html"> 
-              <button class="py-2 text-uppercase text-white fw-bold px-2 border border-0">Login</button>
-          </a>
-        </div>
-    </nav>
+                  <span id="menu-bar"></span>
+                  <a href="../about us/about.html">
+                      <li>about us</li>
+                  </a>
+                  <a href="#">
+                      <li>feedback</li>
+                  </a>
+                  <a href="../T&C/index.html">
+                      <li>terms & conditions</li>
+                  </a>
+                  <a href="../privacy page/privacy.html">
+                      <li>privacy policy</li>
+                  </a>
+                  <a href="../contact us/contact.html">
+                      <li>contact us</li>
+                  </a>
+                  <a href="../mitao bhook/bhook.html">
+                      <li>mitao bhook</li>
+                  </a>
+                  <a href="../scholarship/mb-scholarship.html">
+                      <li>mitao bhook - scholarship</li>
+                  </a>
+                  <a href="#">
+                      <li>careers</li>
+                  </a>
+              </ul>
 
-        <nav class="d-flex justify-content-center btn-section gap-2 align-items-center">
-            <a class="btn fw-bold text-capitalize rounded-1" href="#">Everyday Value</a>
-            <a class="btn fw-bold text-capitalize rounded-1" href="#">Ala-Carte-&-Combos</a>
-            <a class="btn fw-bold text-capitalize rounded-1" href="#">Promotion</a>
-            <a class="btn fw-bold text-capitalize rounded-1" href="#">Signature-Boxes</a>
-            <a class="btn fw-bold text-capitalize rounded-1" href="#">Sharing</a>
-            <a class="btn fw-bold text-capitalize rounded-1" href="#">Snacks-&-Beverages</a>
-            <a class="btn fw-bold text-capitalize rounded-1" href="#">Midnight (Start at 12 am)</a>
-        </nav>
-    </header>
+          </div>
+
+
+      </div>
+
+          <div class="logo gap-3">
+              <a href="../index.html"><img src="../images/logo.png" alt="logo"></a>
+              <a href="#" class="del-pick pick1">
+                  <button class="delivery fw-bold">
+                      <img src="../images/delivey.png" alt="delivery">
+                      <span class="text-white"> Delivery</span>
+                  </button>
+              </a>
+              <a href="#" class="del-pick">
+                  <button class="pickup fw-bold">
+                      <img src="../images/pickup.png" alt="pickup">
+                      <span class="text-white"> Pickup</span>
+
+                  </button>
+              </a>
+
+          </div>
+          <div class="bucket d-flex gap-3">
+              <img src="../images/bucket.png" alt="logo">
+              <a href="../login/index.html"> 
+                  <button class="py-2 text-uppercase text-white fw-bold px-2 border border-0">Login</button>
+              </a>
+          </div>
+      </nav>
+  </header>
 
     <!-- Navbar Ended -->
 

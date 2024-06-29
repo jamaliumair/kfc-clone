@@ -372,6 +372,7 @@
 
 #service {
   width: 250px !important;
+  list-style-type: none;
 }
 
 #service img {
